@@ -9,7 +9,7 @@ import { randomUUID as cryptoRandomUUID } from 'node:crypto';
 import { hold } from 'hold';
 import { unwrap } from 'hold';
 
-/** @type {import('./index').Base.Constructor} */
+/** @type {import('.').Base.Constructor} */
 const constructor = ((options) => {
 
     const _options = ({
@@ -18,7 +18,7 @@ const constructor = ((options) => {
         }),
     });
 
-    /** @type {import('./index').Base._Self} */
+    /** @type {import('.').Base._Self} */
     const _self = ({
         options: (() => {
             return options;
@@ -39,7 +39,7 @@ const constructor = ((options) => {
         }),
     });
 
-    /** @type {import('./index').Base.Self} */
+    /** @type {import('.').Base.Self} */
     const self = ({
         _Base: (() => {
             return _self;
@@ -53,10 +53,10 @@ const constructor = ((options) => {
 
 });
 
-/** @type {import('./index').Base.Companion} */
+/** @type {import('.').Base.Companion} */
 const companion = ({});
 
-/** @type {import('./index').Base.ConstructorWithCompanion} */
+/** @type {import('.').Base.ConstructorWithCompanion} */
 const constructorWithCompanion = Object.assign(constructor, companion);
 
 export { constructorWithCompanion as Base };
