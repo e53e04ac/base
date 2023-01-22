@@ -1,7 +1,7 @@
 # base
 
 ~~~~~ sh
-npm i github:e53e04ac/base
+npm install e53e04ac/base
 ~~~~~
 
 ~~~~~ mjs
