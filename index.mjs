@@ -47,7 +47,6 @@ const constructor = ((options) => {
     });
 
     _self.createDate();
-    _self.uuid();
 
     return self;
 
