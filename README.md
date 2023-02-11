@@ -5,8 +5,8 @@ npm install e53e04ac/base
 ~~~~~
 
 ~~~~~ mjs
-import { type Base } from 'e53e04ac/base';
-import { const Base } from 'e53e04ac/base';
+import { Base } from 'e53e04ac/base';
+import { Base } from 'e53e04ac/base';
 ~~~~~
 
 ~~~~~ mermaid
@@ -20,7 +20,7 @@ graph RL;
   end;
   A ----> B_0;
   A ----> B_1;
-  click B_0 "https://github.com/e53e04ac/hold/tree/8fc3f6696d1c7ed6d184d90c5e33298cc9228991";
+  click B_0 "https://github.com/e53e04ac/hold/tree/67e5b60f9bb3221f8b200107c13e89a604a93631";
   click B_1 "https://www.npmjs.org/package/@types/node/v/18.13.0";
 ~~~~~
 
@@ -46,8 +46,8 @@ graph RL;
 ~~~~~ mermaid
 graph RL;
   subgraph "e53e04ac/base";
-    E_0(["type Base"]);
-    E_1(["const Base"]);
+    E_0(["Base"]);
+    E_1(["Base"]);
   end;
   M(["index.d.ts"])
   subgraph "hold";
