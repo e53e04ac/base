@@ -10,37 +10,41 @@ import { Base } from 'e53e04ac/base';
 
 ~~~~~ mermaid
 graph RL;
-  A(["e53e04ac/base"]);
+  A(["package.json"]);
   subgraph "dependencies";
     B_0(["e53e04ac/hold"]);
   end;
   subgraph "devDependencies";
     B_1(["@types/node"]);
   end;
-  A --reference--> B_0;
-  A --reference--> B_1;
-  click B_0 "https://github.com/e53e04ac/hold/tree/2143f5f52192ae4156ea0af80d41c87c55355e9c";
+  A ----> B_0;
+  A ----> B_1;
+  click B_0 "https://github.com/e53e04ac/hold/tree/285d028e225a7e75747417c3ed6b1ca0d5f52f6a";
   click B_1 "https://www.npmjs.org/package/@types/node/v/18.13.0";
 ~~~~~
 
 ~~~~~ mermaid
 graph LR;
-  subgraph "e53e04ac/base"
-    C0("index.mjs");
-    C1("index.d.ts");
+  A(["index.mjs"])
+  subgraph "node:crypto";
+    B_0_0(["randomUUID"]);
   end;
-  subgraph "node:crypto"
-    D0(["randomUUID"]);
+  subgraph "hold";
+    B_1_0(["hold"]);
+    B_1_1(["unwrap"]);
   end;
-  subgraph "hold"
-    D1(["hold"]);
-    D2(["unwrap"]);
-    D3(["Get"]);
-    D4(["ValueOrGet"]);
+  B_0_0 ----> A;
+  B_1_0 ----> A;
+  B_1_1 ----> A;
+~~~~~
+
+~~~~~ mermaid
+graph LR;
+  A(["index.d.ts"])
+  subgraph "hold";
+    B_0_0(["Get"]);
+    B_0_1(["ValueOrGet"]);
   end;
-  D0 --import--> C0;
-  D1 --import--> C0;
-  D2 --import--> C0;
-  D3 --import--> C1;
-  D4 --import--> C1;
+  B_0_0 ----> A;
+  B_0_1 ----> A;
 ~~~~~
