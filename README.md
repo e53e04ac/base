@@ -19,7 +19,7 @@ graph RL;
   end;
   A --reference--> B_0;
   A --reference--> B_1;
-  click B_0 "https://github.com/e53e04ac/hold/tree/385afd8049a499071f966af24caf970731543db4";
+  click B_0 "https://github.com/e53e04ac/hold/tree/2143f5f52192ae4156ea0af80d41c87c55355e9c";
   click B_1 "https://www.npmjs.org/package/@types/node/v/18.13.0";
 ~~~~~
 
