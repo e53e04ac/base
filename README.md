@@ -5,7 +5,8 @@ npm install e53e04ac/base
 ~~~~~
 
 ~~~~~ mjs
-import { Base } from 'e53e04ac/base';
+import { type Base } from 'e53e04ac/base';
+import { const Base } from 'e53e04ac/base';
 ~~~~~
 
 ~~~~~ mermaid
@@ -19,32 +20,42 @@ graph RL;
   end;
   A ----> B_0;
   A ----> B_1;
-  click B_0 "https://github.com/e53e04ac/hold/tree/285d028e225a7e75747417c3ed6b1ca0d5f52f6a";
+  click B_0 "https://github.com/e53e04ac/hold/tree/8fc3f6696d1c7ed6d184d90c5e33298cc9228991";
   click B_1 "https://www.npmjs.org/package/@types/node/v/18.13.0";
 ~~~~~
 
 ~~~~~ mermaid
-graph LR;
-  A(["index.mjs"])
+graph RL;
+  subgraph "e53e04ac/base";
+    E_0(["Base"]);
+  end;
+  M(["index.mjs"])
   subgraph "node:crypto";
-    B_0_0(["randomUUID"]);
+    I_0_0(["randomUUID"]);
   end;
   subgraph "hold";
-    B_1_0(["hold"]);
-    B_1_1(["unwrap"]);
+    I_1_0(["hold"]);
+    I_1_1(["unwrap"]);
   end;
-  B_0_0 ----> A;
-  B_1_0 ----> A;
-  B_1_1 ----> A;
+  M ----> I_0_0;
+  M ----> I_1_0;
+  M ----> I_1_1;
+  E_0 ----> M;
 ~~~~~
 
 ~~~~~ mermaid
-graph LR;
-  A(["index.d.ts"])
-  subgraph "hold";
-    B_0_0(["Get"]);
-    B_0_1(["ValueOrGet"]);
+graph RL;
+  subgraph "e53e04ac/base";
+    E_0(["type Base"]);
+    E_1(["const Base"]);
   end;
-  B_0_0 ----> A;
-  B_0_1 ----> A;
+  M(["index.d.ts"])
+  subgraph "hold";
+    I_0_0(["Get"]);
+    I_0_1(["ValueOrGet"]);
+  end;
+  M ----> I_0_0;
+  M ----> I_0_1;
+  E_0 ----> M;
+  E_1 ----> M;
 ~~~~~
