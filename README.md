@@ -45,8 +45,9 @@ graph RL;
 ~~~~~ mermaid
 graph RL;
   subgraph "e53e04ac/base";
-    E_0(["type Base"]);
-    E_1(["const Base"]);
+    E_0(["namespace Base"]);
+    E_1(["type Base"]);
+    E_2(["const Base"]);
   end;
   M(["index.d.ts"])
   subgraph "hold";
@@ -57,4 +58,5 @@ graph RL;
   M ----> I_0_1;
   E_0 ----> M;
   E_1 ----> M;
+  E_2 ----> M;
 ~~~~~
