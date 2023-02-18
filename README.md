@@ -19,8 +19,8 @@ graph RL;
   end;
   A ----> B_0;
   A ----> B_1;
-  click B_0 "https://github.com/e53e04ac/hold/tree/b0b5ef032800af76c6e7ae27472dbf25a04a947d";
-  click B_1 "https://www.npmjs.org/package/@types/node/v/18.13.0";
+  click B_0 "https://github.com/e53e04ac/hold/tree/49707680ccdf4c5673f64ff0bab30f408269b328";
+  click B_1 "https://www.npmjs.org/package/@types/node/v/18.14.0";
 ~~~~~
 
 ~~~~~ mermaid
