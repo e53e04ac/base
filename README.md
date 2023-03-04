@@ -18,7 +18,7 @@ graph RL;
     B_1(["@types/node"]);
   end;
   subgraph "github";
-    C_0(["e53e04ac/hold\ndb62bd33b4c93d0fb459b06c3b707d82924c6077"]);
+    C_0(["e53e04ac/hold\n050a2db413598fe87670b5b6bd34b804776a3657"]);
   end;
   subgraph "npmjs";
     C_1(["@types/node\n18.14.6"]);
@@ -27,7 +27,7 @@ graph RL;
   A ----> B_1;
   B_0 ----> C_0;
   B_1 ----> C_1;
-  click C_0 "https://github.com/e53e04ac/hold/tree/db62bd33b4c93d0fb459b06c3b707d82924c6077";
+  click C_0 "https://github.com/e53e04ac/hold/tree/050a2db413598fe87670b5b6bd34b804776a3657";
   click C_1 "https://www.npmjs.com/package/@types/node/v/18.14.6";
 ~~~~~
 
