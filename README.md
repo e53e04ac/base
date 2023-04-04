@@ -18,17 +18,17 @@ graph RL;
     B_1(["@types/node"]);
   end;
   subgraph "github";
-    C_0(["e53e04ac/hold\n472cfb85bada328cba9c6faddcf45b1241761027"]);
+    C_0(["e53e04ac/hold\n6ce132702778d99c7f80a785e982419974dca8e5"]);
   end;
   subgraph "npmjs";
-    C_1(["@types/node\n18.14.6"]);
+    C_1(["@types/node\n18.15.11"]);
   end;
   A ----> B_0;
   A ----> B_1;
   B_0 ----> C_0;
   B_1 ----> C_1;
-  click C_0 "https://github.com/e53e04ac/hold/tree/472cfb85bada328cba9c6faddcf45b1241761027";
-  click C_1 "https://www.npmjs.com/package/@types/node/v/18.14.6";
+  click C_0 "https://github.com/e53e04ac/hold/tree/6ce132702778d99c7f80a785e982419974dca8e5";
+  click C_1 "https://www.npmjs.com/package/@types/node/v/18.15.11";
 ~~~~~
 
 ~~~~~ mermaid
